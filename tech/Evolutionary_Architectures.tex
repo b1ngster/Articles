@@ -1,0 +1,94 @@
+\documentclass[main.tex]{subfiles}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Evolutionary Architectures}
+\author{B1ngster}
+\date{May 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+
+
+
+
+. 
+Evolutionary architectures are designed to accommodate changes and improvements in software by employing a fitness function that evaluates the system's performance against specific objectives. Software requirements are essential in defining the structure and functionality of software systems. They encompass various aspects such as performance, security, and scalability.  Such as security measures, are crucial,  Requirements are not static and evolve over time. 
+
+
+Security is critical in software development; protecting sensitive data that should not be exposed or unprotected. Implementing  security measures, such as encryption, access controls, and secure storage, is crucial to safeguard sensitive information.  but can have a negative impact on performance.  Logging and monitoring are closely related practices in software systems. Logging involves recording events, errors, and important information during runtime, while monitoring focuses on observing the system's performance, availability, and other metrics. Both logging and monitoring provide valuable insights into the system's behaviour and help identify issues and performance bottlenecks.
+
+Architectural governance helps prevent system degradation over time by establishing guidelines and best practices to maintain its integrity.
+Adopting a continuous architecture approach allows for incremental and adaptable development. It aligns with agile methodologies, enabling iterative improvements and responding to feedback and changing needs. This iterative approach also enables the application of genetic algorithms, which can optimize the system's architecture based on a defined fitness function.
+
+An architectural fitness function provides an objective measure to evaluate the quality and effectiveness of an architecture. It defines criteria, such as performance, scalability, maintainability, and security, against which the architecture is assessed. This fitness function guides the decision-making process and helps drive architectural improvements. By embracing continuous architecture, leveraging genetic algorithms, and employing an architectural fitness function, software systems can be developed and maintained to promote adaptability, efficiency, and alignment with business objectives.
+
+
+Proper definition and understanding of the software's domain are vital. Domain-Driven Design promotes the use of a ubiquitous language, which enables effective communication between stakeholders and developers. In addition to domain-specific considerations, non-functional requirements, also known as system requirements or architectural characteristics, play a significant role in software design. These requirements address factors such as performance, scalability, and security.
+
+
+Customer-driven contracts are a concept in software development where the contracts between different components or services are defined based on the customers' or users' specific needs and expectations. This approach helps align the interactions and collaborations between different components to meet customer requirements effectively. When tackling complex problems, it is essential to consider non-domain design considerations. These factors go beyond the specific domain and encompass broader aspects of software development. Solutions to such problems often involve adopting proven design patterns, employing robust architectures, and utilizing appropriate technologies.
+
+Software changes are often driven by business requirements and the need to adapt to evolving circumstances. Such as scalability which is addressed through well-designed architectures that handle increasing workloads and growing user demands. This may involve implementing distributed systems, load-balancing techniques, and horizontal or vertical scaling strategies. These requirements must be properly defined, evaluated, and adapted from performance and security to scalability as the system evolves. Non-domain considerations and architectural characteristics play a crucial role in ensuring the success of software solutions.
+
+
+Automated verification processes play a crucial role in ensuring the quality and correctness of these changes.Building for change is an ongoing process that requires careful consideration and planning.
+
+Tests in software development can be categorized as atomic or holistic. Atomic tests focus on individual units or components, verifying their functionality in isolation. Holistic tests assess the system, examining the interactions and integration between various components. These tests can be triggered at specific points or executed continuously to ensure ongoing validation.
+
+Tests provide static or dynamic results based on scalability, concurrency, and performance metrics. They can include predefined thresholds or ranges to evaluate the system's behaviour under varying conditions. Automated tests and verification processes are executed without human interaction, allowing for efficient and consistent validation.
+
+
+Manual testing involves human intervention, where testers interact with the system, inputs, and outputs, evaluating its behaviour and identifying potential issues. Temporal testing focuses on verifying time-dependent aspects of a system, such as data synchronization or event sequencing. Domain-specific testing considers a particular domain's unique requirements and characteristics, tailoring the testing approach to address specific challenges and objectives.
+
+Unit, functional, and acceptance testing are common types of testing performed in software development. Unit tests focus on validating the functionality of individual units or components of the software. Functional tests verify that the system meets the specified functional requirements. Acceptance tests ensure that the software meets the end users' or customers' expectations and requirements.
+
+
+
+Chaos engineering is a practice that involves intentionally introducing failures and disruptions into a system to assess its resiliency and identify potential weaknesses. By subjecting a system to controlled chaos, engineers can gain insights into its behaviour under adverse conditions and improve its robustness. Chaos Monkey and the Simian Army are tools or frameworks developed by Netflix for testing and improving the resilience of their systems. Chaos Monkey introduces random failures in the system to ensure it can withstand unexpected failures. Simian Army includes additional tools like Janitor Monkey, which helps clean up unused resources, and Conformity Monkey, which enforces best practices and configuration standards.
+
+Test-driven development (TDD) is a software development practice that encourages writing tests before writing the actual code. It promotes good programming practices by ensuring the code meets the specified requirements and behaves as expected.
+
+Afferent and efferent coupling measures how dependent a module or component is on other modules (afferent) and how much it depends on external modules (efferent). These measures help assess the complexity and interdependencies within a software system.
+
+
+
+The Strategy Design Pattern is a software design pattern that helps reduce a system's complexity by encapsulating interchangeable algorithms or behaviours into separate classes, allowing flexibility and easy behaviour modification without modifying the core logic.
+
+
+Cyclic dependency is an antipattern in software development where components or modules have interdependent relationships, resulting in tight coupling and decreased maintainability. \textbf{JDepend }can be used to identify and analyze cyclic dependencies within a codebase. 
+
+Tools like 
+
+ArchUnit is a Java library that provides a fluent API for testing and asserting architectural rules in code. It allows developers to define and enforce architectural constraints, such as package dependencies and class naming conventions.
+
+Cyclomatic complexity is a metric used to measure the complexity of a program by counting the number of independent paths through the code. It provides insights into the potential test cases needed to achieve full code coverage.
+
+Crap4j is a tool that assesses code quality based on metrics like cyclomatic complexity, code coverage, and code duplication. It helps identify areas of code that may need improvement or refactoring to enhance maintainability and readability.  
+
+
+Nagios is an open-source monitoring and alerting system widely used in the industry. It allows monitoring of various resources and services, providing notifications and alerts in case of issues or failures. Synthetic transactions are simulated interactions or transactions performed within a system to validate its functionality, performance, and response. These transactions help assess the system's behaviour and identify any issues or bottlenecks.
+
+
+
+
+{SAST} (Static Application Security Testing) tools like SonarQube analyze source code or compiled binaries for security vulnerabilities, code smells, and other issues. These tools help identify potential security vulnerabilities and provide recommendations for remediation.
+
+
+\textbf{Pact.io }is a testing framework that allows contract testing between service providers and consumers. It ensures that services communicate and integrate correctly by defining and validating contracts.
+
+\textbf{Swabbie} is a Spinnaker continuous delivery platform component that helps manage and clean up unused or stale resources in cloud environments. It helps keep the environment clean and reduces resource wastage.
+
+\textbf{Dependabot} is a tool that automatically checks for outdated dependencies in a software project and provides automated pull requests to update them. It helps ensure that the project uses up-to-date and secure dependencies.. 
+
+\textbf{Kinesis} is a platform Amazon Web Services (AWS) provides for real-time streaming and processing of large volumes of data. It helps handle events and data streams efficiently, avoiding using magic strings or constants.
+
+Synergistic elements are incorporated into software development to create cohesive and effective systems.  
+An independently deployable artefact with high functional cohesion refers to a component or module that can be deployed and operated independently without relying heavily on other components. Static coupling and synchronous dynamic coupling ensure proper communication and coordination between components.
+
+\end{document}
+
