@@ -11,7 +11,7 @@ jobs:
       # uses: michal-h21/make4ht-action@master
       uses: docker://ghcr.io/michal-h21/make4ht-action:latest
       env:
-        command: 'make4ht -c my.cfg -ua debug -d out Kowalewskaja.tex "fn-in" '
+        command: 'make4ht -c my.cfg -ua debug -d out tech/Kowalewskaja.tex "fn-in" '
     - name: Create index tex
       run: |
           sudo mv ./out/Kowalewskaja.html ./out/Kowalewskaja.html
